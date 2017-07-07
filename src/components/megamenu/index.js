@@ -7,7 +7,7 @@ $('.js-megamenu').addClass('is-ready')
 
 const opts = {
   /* add a close button to every subnav */
-  addCloseButton: false,
+  addCloseButton: true,
 
   closeButtonClass: 'js-Megamenu-close',
 
@@ -34,6 +34,8 @@ const opts = {
 
   /* css class for a group of items within a megamenu panel */
   panelGroupClass: 'Megamenu-subnavGroup',
+
+  subtitleClass: 'Megamenu-subtitle',
 
   /* css class for the hover state */
   hoverClass: 'is-hover',
@@ -79,6 +81,8 @@ const listToMegaMenu = ($ul, _opts) => {
         .end()
         .find('> ul')
         .wrapAll(`<div class="${_opts.panelClass}" />`)
+        .parent()
+        .prepend(`<div class="${_opts.subtitleClass}">`+$(this).data('megamenu-subtitle')+'</div>')
     })
     .end()
 }
