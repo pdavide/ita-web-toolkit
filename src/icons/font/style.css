@@ -46,20 +46,20 @@
   content: "\4c";
 }
 
-.Icon-medium::before {
-  content: "\4d";
-}
-
-.Icon-github::before {
-  content: "\67";
-}
-
 .Icon-youtube::before {
   content: "\59";
 }
 
 .Icon-instagram::before {
   content: "\49";
+}
+
+.Icon-medium::before {
+  content: "\4d";
+}
+
+.Icon-github::before {
+  content: "\67";
 }
 
 .Icon-slideshare::before {
@@ -80,6 +80,10 @@
 
 .Icon-list::before {
   content: "\2263";
+}
+
+.Icon-small-burger::before {
+  content: "\e904";
 }
 
 .Icon-pin::before {
@@ -195,7 +199,7 @@
 }
 
 .Icon-arrow-up::before {
-  content: "\2b08";
+  content: "\2b61";
 }
 
 .Icon-more-items::before {
