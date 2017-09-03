@@ -1,0 +1,41 @@
+.Tabs .tablist {
+  display: table;
+  list-style: none;
+  margin: 0 !important;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.Tabs .tab {
+  border-bottom: 1px solid rgba(90, 103, 114, 0.2);
+  cursor: pointer;
+  display: table-cell;
+  padding: 1em;
+}
+
+.Tabs .tablist::before {
+  border-bottom: 1px solid rgba(90, 103, 114, 0.2);
+  content: "";
+  display: table-cell;
+  padding: 1em;
+}
+
+.Tabs .tablist::after {
+  border-bottom: 1px solid rgba(90, 103, 114, 0.2);
+  content: "";
+  display: table-cell;
+  padding: 1em;
+  width: auto;
+}
+
+.Tabs .tab.selected {
+  border-bottom: none;
+  border-left: 1px solid rgba(90, 103, 114, 0.2);
+  border-right: 1px solid rgba(90, 103, 114, 0.2);
+  border-top: 1px solid rgba(90, 103, 114, 0.2);
+}
+
+.Tabs .panel {
+  clear: both;
+  padding: 1em;
+}
