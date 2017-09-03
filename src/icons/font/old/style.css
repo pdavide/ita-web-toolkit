@@ -2,23 +2,20 @@
   font-family: "ita";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/ita.eot?lsal8e");
+  src: url("./fonts/ita.eot?v=ia");
   src:
-    url("fonts/ita.eot?lsal8e#iefix") format("embedded-opentype"),
-    url("fonts/ita.ttf?lsal8e") format("truetype"),
-    url("fonts/ita.woff?lsal8e") format("woff"),
-    url("fonts/ita.svg?lsal8e#ita") format("svg");
+    url("./fonts/ita.eot?v=ia#iefix") format("embedded-opentype"),
+    url("./fonts/ita.ttf?v=ia") format("truetype"),
+    url("./fonts/ita.woff?v=ia") format("woff"),
+    url("./fonts/ita.svg?v=ia#ita") format("svg");
 }
 
 .Icon,
 [class^="Icon-"],
 [class*=" Icon-"] {
-
-  /* use !important to prevent issues with
-  browser extensions that change fonts */
   font-family: "ita" !important;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
@@ -33,8 +30,16 @@
   font-size: 1em;
 }
 
+.Icon--flipped {
+  transform: scale(-1, 1);
+}
+
+.Icon--rotated {
+  transform: rotate(-90deg);
+}
+
 .Icon-web::before {
-  content: "\77";
+  content: "\e9c9";
 }
 
 .Icon-behance::before {
@@ -55,10 +60,6 @@
 
 .Icon-medium::before {
   content: "\4d";
-}
-
-.Icon-github-o::before {
-  content: "\e900";
 }
 
 .Icon-github::before {
@@ -83,6 +84,10 @@
 
 .Icon-list::before {
   content: "\2263";
+}
+
+.Icon-small-burger::before {
+  content: "\e904";
 }
 
 .Icon-pin::before {
@@ -111,14 +116,6 @@
 
 .Icon-youtube-text::before {
   content: "\79";
-}
-
-.Icon-forum::before {
-  content: "\e903";
-}
-
-.Icon-read::before {
-  content: "\e902";
 }
 
 .Icon-comment::before {
@@ -185,10 +182,6 @@
   content: "\1f512";
 }
 
-.Icon-download-alt::before {
-  content: "\e901";
-}
-
 .Icon-settings::before {
   content: "\2699";
 }
@@ -231,10 +224,6 @@
 
 .Icon-app::before {
   content: "\1f4f2";
-}
-
-.Icon-small-burger::before {
-  content: "\e904";
 }
 
 .Icon-refresh::before {
@@ -298,13 +287,9 @@
 }
 
 .Icon-info::before {
-  content: "\69";
+  content: "\1f6c8";
 }
 
 .Icon-print::before {
-  content: "\70";
-}
-
-.Icon-cc0::before {
-  content: "\30";
+  content: "\1f5b6";
 }
